@@ -5,6 +5,7 @@ import Header from './Pages/Shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Blogs from './Pages/Blogs/Blogs';
 import AboutMe from './Pages/AboutMe/AboutMe';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path='/aboutme' element={<AboutMe />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }

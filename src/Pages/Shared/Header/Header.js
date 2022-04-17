@@ -7,7 +7,7 @@ import './Header.css'
 const Header = () => {
     return (
         <Container bg="light" >
-            <Navbar expand="lg">
+            <Navbar expand="lg" className='py-3'>
                 <Container fluid>
                     <Navbar.Brand className='navbar-title' as={Link} to="/">Tour.inc</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -20,7 +20,6 @@ const Header = () => {
                             <Nav.Link as={CustomLink} to="/home">Home</Nav.Link>
                             <Nav.Link as={CustomLink} to="/blogs">Blogs</Nav.Link>
                             <Nav.Link as={CustomLink} to="/aboutme">About Me</Nav.Link>
-
 
                         </Nav>
                         <Form className="d-flex">
