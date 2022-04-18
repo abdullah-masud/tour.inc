@@ -54,17 +54,17 @@ const Login = () => {
 
     return (
         <Container className='w-25 login-container mt-5'>
-            <h2 className='mb-3' style={{ color: 'rgb(1, 10, 100)' }}>Login</h2>
+            <h2 className='mb-3 text-center' style={{ color: 'rgb(1, 10, 100)' }}>Login</h2>
             <form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+                    <Form.Control className='login-input' ref={emailRef} type="email" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" />
+                    <Form.Control className='login-input' ref={passwordRef} type="password" placeholder="Password" />
                 </Form.Group>
                 {errorElement}
-                <Button variant="primary" type="submit">
+                <Button className='login-button w-25 mx-auto d-block' type="submit">
                     Login
                 </Button>
             </form>

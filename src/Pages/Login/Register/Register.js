@@ -1,4 +1,3 @@
-import { confirmPasswordReset } from 'firebase/auth';
 import React, { useRef, useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -26,6 +25,15 @@ const Register = () => {
         return <Loading />
     }
 
+    let errorElement;
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message} </p>
+    }
+
+    if (user) {
+        navigate('/home')
+    }
+
     const handleRegister = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
@@ -34,34 +42,35 @@ const Register = () => {
 
         if (password === confirmPassword) {
             createUserWithEmailAndPassword(email, password);
-            navigate('/home')
-        } else {
+        }
+        else {
             setError("Password didn't Match")
         }
     }
     return (
         <Container className='w-25 mt-5'>
-            <h2 className='mb-3' style={{ color: 'rgb(1, 10, 100)' }}>Sign Up</h2>
+            <h2 className='mb-3 text-center' style={{ color: 'rgb(1, 10, 100)' }}>Sign Up</h2>
             <form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={nameRef} type="text" placeholder="Name" />
+                    <Form.Control className='login-input' ref={nameRef} type="text" placeholder="Name" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    <Form.Control className='login-input' ref={emailRef} type="email" placeholder="Enter email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    <Form.Control className='login-input' ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={confirmPasswordRef} type="password" placeholder="Confirm Password" required />
+                    <Form.Control className='login-input' ref={confirmPasswordRef} type="password" placeholder="Confirm Password" required />
                 </Form.Group>
-                <Button variant="primary" type="submit" >
+                <Button className='login-button mx-auto d-block' variant="primary" type="submit" >
                     Sign Up
                 </Button>
             </form>
+            {errorElement}
             <p className='text-danger mt-3'>{error1}</p>
 
             <p className='mt-3'>

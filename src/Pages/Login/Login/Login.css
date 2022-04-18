@@ -12,5 +12,13 @@
 
 .continue-with-google span {
     font-size: 20px;
+}
 
+.login-input {
+    border-radius: 10px;
+}
+
+.login-button {
+    background: rgb(62, 55, 158);
+    border: 0;
 }
