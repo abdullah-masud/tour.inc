@@ -1,12 +1,11 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Card, } from 'react-bootstrap';
 import './Review.css'
 
 const Review = (props) => {
     const { name, rating, description, img } = props.review;
     return (
-        <Card className='mx-3 mb-5 text-center'>
+        <Card className='mx-3 mb-5 text-center shadow p-3 mb-5 bg-body rounded border-0'>
             <Card.Img className='img' variant="top" src={img} />
             <Card.Body >
                 <h2>{name}</h2>

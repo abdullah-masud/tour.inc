@@ -53,7 +53,7 @@ const Login = () => {
     }
 
     return (
-        <Container className='w-50 login-container'>
+        <Container className='w-25 login-container mt-5'>
             <h2 className='mb-3' style={{ color: 'rgb(1, 10, 100)' }}>Login</h2>
             <form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -40,7 +40,7 @@ const Register = () => {
         }
     }
     return (
-        <Container className='w-50'>
+        <Container className='w-25 mt-5'>
             <h2 className='mb-3' style={{ color: 'rgb(1, 10, 100)' }}>Sign Up</h2>
             <form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
