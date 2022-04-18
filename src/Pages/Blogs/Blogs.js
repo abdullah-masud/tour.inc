@@ -3,8 +3,8 @@ import { Accordion, Container } from 'react-bootstrap';
 
 const Blogs = () => {
     return (
-        <Container>
-            <h1 className='my-3'>FAQ</h1>
+        <Container className='mt-5'>
+            <h1 className='my-4 text-center'>FAQ</h1>
             <Accordion>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header><h6>Difference between authorization and authentication</h6></Accordion.Header>
