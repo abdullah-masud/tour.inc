@@ -1,11 +1,21 @@
 import React from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 import './Login.css'
-import google from '../../../images/google.svg'
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 const Login = () => {
+    const [user] = useAuthState(auth)
+    const location = useLocation()
+
+    let from = location.state?.from?.pathname || "/";
+
+    if (user) {
+        Navigate(from, { replace: true });
+    }
+
     return (
         <Container className='w-50 login-container'>
             <h2 className='mb-3' style={{ color: 'rgb(1, 10, 100)' }}>Login</h2>
