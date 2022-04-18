@@ -4,7 +4,7 @@ import { Card, Button } from 'react-bootstrap';
 const Service = (props) => {
     const { name, price, description, img } = props.service
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card className='mx-3 mb-5'>
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
