@@ -20,7 +20,7 @@ const Reviews = () => {
     return (
         <div>
             <Container >
-                <h1 style={{ color: "rgb(33, 30, 71)" }} className='text-center my-5'>Reviews</h1>
+                <h1 style={{ color: "rgb(33, 30, 71)" }} className='text-center my-5'>Testimonials</h1>
                 <div className='service-container mb-5'>
                     {
                         reviews.map(review => <Review
