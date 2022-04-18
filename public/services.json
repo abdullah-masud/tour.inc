@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "name": "Primary",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "name": "24hrs Tour",
+        "price": "$200",
+        "description": "Over the course of this 24-hour period, we'll take you to all of the city's top sights and ensure that you have a great time.",
+        "img": "https://i.ibb.co/qyRGbp6/1.png"
     },
     {
         "id": 2,
-        "name": "Secondary",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "name": "3 days Tour",
+        "price": "$500",
+        "description": "We will take care of your three-day tour, including food and refreshments, as well as showing you around the country's most beautiful sights.",
+        "img": "https://i.ibb.co/0jVWKjk/service1.jpg"
     },
     {
         "id": 3,
-        "name": "Ultimate",
-        "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "name": "7 days Tour",
+        "price": "$1150",
+        "description": "We will ensure that you enjoy your 7-day vacation by providing free food and transporting you to all of the beautiful destinations.",
+        "img": "https://i.ibb.co/HGPLfn5/3.png"
     }
 ]

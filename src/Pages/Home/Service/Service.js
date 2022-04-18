@@ -8,15 +8,15 @@ const Service = (props) => {
     return (
         <Card className='mx-3 mb-5'>
             <Card.Img variant="top" src={img} />
-            <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Title>{price}</Card.Title>
-                <Card.Text>
+            <Card.Body >
+                <h2>{name}</h2>
+                <Card.Title className='mt-3'>{price}</Card.Title>
+                <Card.Text className='mt-3'>
                     {description}
                 </Card.Text>
-                <Button as={Link} to="/checkout" variant="primary">Click to Checkout</Button>
+                <Button className='my-2' as={Link} to="/checkout" variant="outline-success">Click to Checkout</Button>
             </Card.Body>
-        </Card>
+        </Card >
     );
 };
 
