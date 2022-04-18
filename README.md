@@ -1,6 +1,6 @@
 # Tour.inc
 
-Website Link [Tour.inc](https://techiq.netlify.app/)
+Website Link [Tour.inc](https://tour-inc.web.app/)
 
 ## Website Description
 
