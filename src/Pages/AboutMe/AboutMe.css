@@ -1,0 +1,45 @@
+.about-me {
+    background-color: red;
+}
+
+.about-me h6 {
+    background-color: #e8f8fa;
+    border-radius: 10px;
+}
+
+
+
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .about-me {
+        flex-direction: column-reverse;
+    }
+
+    .info p {
+        margin: 0 auto;
+    }
+
+
+    .about-me .info {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .about-me img {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width: 992px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

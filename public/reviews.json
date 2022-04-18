@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Jonas",
-        "description": "Excellent private tour. Our guide was incredibly knowledgable and gave us a fantastic day in Riga.",
+        "description": "Excellent private tour. Our guide was incredibly knowledgable and gave us a fantastic day.",
         "img": "https://randomuser.me/api/portraits/men/61.jpg",
         "rating": "4.5/5"
     },
@@ -16,7 +16,7 @@
     {
         "id": 3,
         "name": "Drake",
-        "description": "A fantastic tour. This tour won’t disappoint! We had a fantastic tour guide who was very knowledgeable",
+        "description": "A fantastic tour. We had a fantastic tour guide who was very knowledgeable",
         "img": "https://randomuser.me/api/portraits/men/1.jpg",
         "rating": "4.9/5"
     }
