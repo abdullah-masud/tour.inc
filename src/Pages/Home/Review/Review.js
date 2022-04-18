@@ -1,23 +1,22 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Review.css'
 
-const Service = (props) => {
-    const { name, price, description, img } = props.service;
-
+const Review = (props) => {
+    const { name, rating, description, img } = props.review;
     return (
         <Card className='mx-3 mb-5 text-center'>
-            <Card.Img variant="top" src={img} />
+            <Card.Img className='img' variant="top" src={img} />
             <Card.Body >
                 <h2>{name}</h2>
-                <Card.Title className='mt-3'>{price}</Card.Title>
                 <Card.Text className='mt-3'>
                     {description}
                 </Card.Text>
-                <Button className='my-2' as={Link} to="/checkout" variant="outline-success">Click to Checkout</Button>
+                <h5>Rating: {rating}</h5>
             </Card.Body>
         </Card >
     );
 };
 
-export default Service;
+export default Review;
